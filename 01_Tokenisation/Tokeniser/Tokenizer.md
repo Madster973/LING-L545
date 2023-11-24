@@ -38,7 +38,8 @@ python wer.py original_sentence.txt tokenized_output.txt
 ```
 
 ## Performance Evaluation
-The MaxMatch algorithm's performance was evaluated based on WER. The WER values ranged from 7% to 40%, indicating varying levels of accuracy across different sentences.
+The MaxMatch algorithm's performance was evaluated based on WER. The WER values ranged from 7% to 40%, indicating varying levels of accuracy across different sentences. You can find the WER for all the lines in **percentage.txt** file
+
 
 ### Examples
 
