@@ -52,5 +52,6 @@ hfst-fst2txt tel.lexc.hfst | python3 att2dot.py  | dot -Tpng -o tel.lexc.png
 ```
 
 The above command would be generating a png file which consists of FST diagram:
+![FST for Telugu noun forms](tel.lexc.png)
 
 
