@@ -1,0 +1,42 @@
+Multichar_Symbols
+%<nom%> %<acc%> %<dat%> %<gen%>
+
+LEXICON Root
+aakaasham Noun ; ! "sky"
+sooryudu Noun ; ! "sun"
+chandrudu Noun ; ! "moon"
+taara Noun ; ! "star"
+puvvu Noun ; ! "flower"
+vruksham Noun ; ! "tree"
+kalam Noun ; ! "pen"
+parvatam Noun ; ! "mountain"
+naava Noun ; ! "boat"
+vimaanam Noun ; ! "airplane"
+bassu Noun ; ! "bus"
+pakshi Noun ; ! "bird"
+megham Noun ; ! "cloud"
+varsham Noun ; ! "rain"
+nadi Noun ; ! "river"
+samudram Noun ; ! "ocean"
+paathashaala Noun ; ! "school"
+aasupatri Noun ; ! "hospital"
+udyogam Noun ; ! "job"
+aahaaram Noun ; ! "food"
+
+
+LEXICON Noun
+%<nom%>: NOM ; 
+%<acc%>: ACC ; 
+%<dat%>: DAT ; 
+# ; 
+
+LEXICON NOM
+: # ; ! No change for nominative
+
+LEXICON ACC
+%+ni: # ; ! Accusative suffix
+
+LEXICON DAT
+%+ki: # ; ! Dative suffix
+
+
