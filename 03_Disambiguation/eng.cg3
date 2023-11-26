@@ -1,0 +1,21 @@
+DELIMITERS = "." ;
+
+LIST FINITE = VerbForm=Fin;
+LIST THE = "the" ;
+LIST INF = VerbForm=Inf;
+LIST PREP = "of" "in";
+LIST NOMINAL = NOUN, PROPN; # Includes nouns and proper nouns
+LIST REL = "that"; # Possible relative pronouns
+LIST CS = "that"; # Conjunctive subordinators
+LIST ADJ = ADJ;
+LIST ADV = ADV;
+LIST NOUN = NOUN;
+LIST VERB = VERB;
+LIST COLLECTIVE_NOUN = "majority"
+
+SECTION
+
+REMOVE FINITE IF (-1 THE) ;
+REMOVE INF IF (NOT -1 PREP) ;
+SELECT ADV IF (1C VERB);
+SELECT REL IF (-1 NOMINAL) (0 REL OR CS) (1 FINITE) ;
