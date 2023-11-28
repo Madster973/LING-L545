@@ -31,6 +31,11 @@ The script generates a scatter plot with two axes:
 - **VO Axis**: Represents the frequency of Verb-Object ordering.
 Each point on the plot corresponds to a language, with annotations indicating the language code.
 
+Below is the plot that I have got:
+
+![Alt text](plot.png)
+
+
 ## Customization
 - To analyze a different set of languages, simply replace the .conllu files in the working directory with those of the desired languages.
 - Modify the plotting section of the script to customize the appearance of the output graph.
