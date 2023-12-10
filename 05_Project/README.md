@@ -10,3 +10,5 @@ This project explores innovative approaches in computational linguistics to cate
 * Gensim
 * plotly
 * transformers
+
+## Note: For the Word2Vec pretrained model, you can download it from https://code.google.com/archive/p/word2vec/
