@@ -1,4 +1,3 @@
-
 # Telugu Noun Morphotactics with HFST
 
 This project involves creating a finite-state transducer (FST) for basic morphotactics of Telugu nouns using the Helsinki Finite-State Technology (HFST) toolkit. It covers the generation of different grammatical cases (nominative, accusative, dative, and genitive) for a set of Telugu nouns.
@@ -9,49 +8,32 @@ The `.lexc` file in this repository defines the morphological rules for 20 Telug
 
 ## Nouns Covered
 
-The following 20 Telugu nouns are included in the `.lexc` file:
+The `.lexc` file includes a set of nouns categorized by gender (masculine, feminine, neuter) and provides rules for generating forms in different grammatical cases. The nouns covered are:
 
-1. ఆకాశం (aakaasham - sky)
-2. సూర్యుడు (sooryudu - sun)
-3. చంద్రుడు (chandrudu - moon)
-4. తార (taara - star)
-5. పువ్వు (puvvu - flower)
-6. వృక్షం (vruksham - tree)
-7. కలం (kalam - pen)
-8. పర్వతం (parvatam - mountain)
-9. నావ (naava - boat)
-10. విమానం (vimaanam - airplane)
-11. బస్సు (bassu - bus)
-12. పక్షి (pakshi - bird)
-13. మేఘం (megham - cloud)
-14. వర్షం (varsham - rain)
-15. నది (nadi - river)
-16. సముద్రం (samudram - ocean)
-17. పాఠశాల (paathashaala - school)
-18. ఆసుపత్రి (aasupatri - hospital)
-19. ఉద్యోగం (udyogam - job)
-20. ఆహారం (aahaaram - food)
+- Masculine Nouns: bāludu (boy), vyāpāri (merchant), sainikudu (soldier), upādhyāyudu (teacher), rāyudu (Raja), krīḍākaaruḍu (athlete), cikitsakuḍu (doctor), śilpī (artist), pariyātakaḍu (tourist), vādhyakāruḍu (musician).
+- Feminine Nouns: āvu (cow), puvvu (flower), padmam (lotus), kanakam (gold).
+- Neuter Nouns: pustakam (book), inti (house), gānam (song), vāhanam (vehicle), phalam (fruit), kavitvam (poetry).
 
 ## File Structure
 
-- `tel.lexc`: Contains the lexical rules for the Telugu nouns.
-
+- `TeluguMorphology_Corrected.lexc`: Contains the lexical rules for the Telugu nouns and their inflections based on gender and case.
 
 ## Compiling the Lexicon
 
-To compile the `.lexc` file into an HFST transducer, run the following command in your terminal:
+To compile the `.lexc` file into an HFST transducer, use the following command:
 
 ```bash
-hfst-lexc tel.lexc -o tel.hfst
+hfst-lexc TeluguMorphology_Corrected.lexc -o tel.hfst
 ```
 
-## Generating The FST 
+## Generating The FST
+
+To visualize the FST, you can convert the compiled file into a graphical representation:
 
 ```bash
-hfst-fst2txt tel.lexc.hfst | python3 att2dot.py  | dot -Tpng -o tel.lexc.png
+hfst-fst2txt tel.hfst | python3 att2dot.py | dot -Tpng -o tel_lexc.png
 ```
 
+This command generates a PNG file consisting of the FST diagram for the Telugu noun forms.
 The above command would be generating a png file which consists of FST diagram:
 ![FST for Telugu noun forms](tel.lexc.png)
-
-
