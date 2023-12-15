@@ -34,75 +34,75 @@
 # Output:
 ```bash
 "<At>"
-	"at" ADP
+        "at" ADP
 "<the>"
-	"the" DET Definite=Def PronType=Art
-	"the" DET Definite=Def PronType=Art Typo=Yes
-	"to" PART Typo=Yes
-	"_" X
+        "the" DET Definite=Def PronType=Art
+        "the" DET Definite=Def PronType=Art Typo=Yes
+        "to" PART Typo=Yes
+        "_" X
 "<start>"
-	"start" NOUN Number=Sing
-	"start" VERB Mood=Ind Number=Plur Person=1 Tense=Pres VerbForm=Fin
-	"start" VERB Mood=Ind Number=Plur Person=3 Tense=Pres VerbForm=Fin
-	"start" VERB Mood=Ind Number=Sing Person=2 Tense=Pres VerbForm=Fin
-	"start" VERB Mood=Imp Person=2 VerbForm=Fin
-;	"start" VERB VerbForm=Inf REMOVE:19
+        "start" NOUN Number=Sing
+;       "start" VERB VerbForm=Inf REMOVE:21
+;       "start" VERB Mood=Ind Number=Plur Person=1 Tense=Pres VerbForm=Fin REMOVE:20
+;       "start" VERB Mood=Ind Number=Plur Person=3 Tense=Pres VerbForm=Fin REMOVE:20
+;       "start" VERB Mood=Ind Number=Sing Person=2 Tense=Pres VerbForm=Fin REMOVE:20
+;       "start" VERB Mood=Imp Person=2 VerbForm=Fin REMOVE:20
 "<of>"
-	"of" ADP
-	"of" SCONJ
-	"of" ADP Typo=Yes
+        "of" ADP
+        "of" SCONJ
+        "of" ADP Typo=Yes
 "<the>"
-	"the" DET Definite=Def PronType=Art
-	"the" DET Definite=Def PronType=Art Typo=Yes
-	"to" PART Typo=Yes
-	"_" X
+        "the" DET Definite=Def PronType=Art
+        "the" DET Definite=Def PronType=Art Typo=Yes
+        "to" PART Typo=Yes
+        "_" X
 "<century>"
-	"century" NOUN Number=Sing
+        "century" NOUN Number=Sing
 "<,>"
-	"," PUNCT
-	"," PUNCT Foreign=Yes
-	"." PUNCT
+        "," PUNCT
+        "," PUNCT Foreign=Yes
+        "." PUNCT
 
 "<the>"
-	"the" DET Definite=Def PronType=Art
-	"the" DET Definite=Def PronType=Art Typo=Yes
-	"to" PART Typo=Yes
-	"_" X
+        "the" DET Definite=Def PronType=Art
+        "the" DET Definite=Def PronType=Art Typo=Yes
+        "to" PART Typo=Yes
+        "_" X
 "<majority>"
-	"majority" NOUN Number=Sing
+        "majority" NOUN Number=Sing
 "<of>"
-	"of" ADP
-	"of" SCONJ
-	"of" ADP Typo=Yes
+        "of" ADP
+        "of" SCONJ
+        "of" ADP Typo=Yes
 "<English>"
-	"English" ADJ Degree=Pos SELECT:20
-	"English" ADJ Degree=Pos Number=Sing SELECT:20
-;	"English" PROPN Number=Sing SELECT:20
+        "English" ADJ Degree=Pos SELECT:25
+        "English" ADJ Degree=Pos Number=Sing SELECT:25
+;       "English" PROPN Number=Sing SELECT:25
 "<people>"
-	"person" NOUN Number=Plur
-	"people" NOUN Number=Sing
+        "person" NOUN Number=Plur
+        "people" NOUN Number=Sing
 "<worked>"
-	"work" VERB Mood=Ind Number=Sing Person=3 Tense=Past VerbForm=Fin
-	"work" VERB Mood=Ind Number=Plur Person=3 Tense=Past VerbForm=Fin
-	"work" VERB Tense=Past VerbForm=Part
-	"work" VERB Mood=Ind Number=Sing Person=1 Tense=Past VerbForm=Fin
+        "work" VERB Mood=Ind Number=Sing Person=3 Tense=Past VerbForm=Fin
+        "work" VERB Mood=Ind Number=Plur Person=3 Tense=Past VerbForm=Fin
+        "work" VERB Tense=Past VerbForm=Part
+        "work" VERB Mood=Ind Number=Sing Person=1 Tense=Past VerbForm=Fin
 "<in>"
-	"in" SCONJ
-	"in" ADP
-	"in" ADV Degree=Pos
-	"in" X
-	"in" ADP Typo=Yes
+        "in" SCONJ
+        "in" ADP
+        "in" ADV Degree=Pos
+        "in" X
+        "in" ADP Typo=Yes
 "<the>"
-	"the" DET Definite=Def PronType=Art
-	"the" DET Definite=Def PronType=Art Typo=Yes
-	"to" PART Typo=Yes
-	"_" X
+        "the" DET Definite=Def PronType=Art
+        "the" DET Definite=Def PronType=Art Typo=Yes
+        "to" PART Typo=Yes
+        "_" X
 "<countryside>"
-	"countryside" NOUN Number=Sing
+        "countryside" NOUN Number=Sing
 "<economy>"
-	"economy" NOUN Number=Sing
+        "economy" NOUN Number=Sing
 "<.>"
-	"." PUNCT
-	"." PUNCT Typo=Yes
+        "." PUNCT
+        "." PUNCT Typo=Yes
 
 ```
